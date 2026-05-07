@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.pyo
+*.log
+
+.env
+.venv/
+venv/
+
+bot_tokens.json
+button_stats.json
+channels.json
+
+*.bak
+*.tmp

@@ -1,0 +1,15 @@
+[Unit]
+Description=Telegram Router WireGuard Bot
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/botvpnredirect
+ExecStart=/opt/botvpnredirect/.venv/bin/python /opt/botvpnredirect/multi_bot_redirect.py
+Restart=always
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
